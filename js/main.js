@@ -2,7 +2,7 @@ const board = document.getElementById("board");
 const rows = 6;
 const cols = 6;
 const totalTiles = rows * cols;
-const numMines = 4;
+let numMines;
 
 const tileValues = {};
 
@@ -31,8 +31,6 @@ for (let i = 0; i < totalTiles; i++) {
     board.appendChild(tile);
 }
 
-generateMines();
-
 function revealTile(tile) {
     if (!tile.classList.contains("flipped")) {
         const index = parseInt(tile.dataset.index);
@@ -54,4 +52,8 @@ function revealAllTiles() {
         tile.dataset.value = value;
         tile.classList.add("flipped");
     });
+}
+function setMinesCount(count) {
+    numMines = count;
+    generateMines();
 }

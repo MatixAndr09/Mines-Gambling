@@ -1,0 +1,115 @@
+.bet_panel {
+    position: relative;
+    margin-right: 1000px;
+    width: 250px;
+    height: 200px;
+    background-color: #2e3841;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.betButton {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: #272d33;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+.betButton:hover {
+    animation: scale 0.8s infinite;
+}
+
+.betButton:active {
+    animation: none;
+
+}
+
+#betttn {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    background-color: green;
+    box-shadow: 2px 2px 5px rgba(0, 128, 0, .5);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+#betttn:active {
+    transition: 0.3s all ease;
+    background-color: green;
+}
+
+.form__group {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}

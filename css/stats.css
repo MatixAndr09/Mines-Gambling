@@ -1,0 +1,9 @@
+.stats {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: #2e3841;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}

@@ -5,20 +5,35 @@
     <title>Mines</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset_btn.css">
+    <link rel="stylesheet" href="css/bet_panel.css">
+    <link rel="stylesheet" href="css/stats.css">
     </head>
     <body>
         <div class="header">
             <h2>Mines - Gambling Game</h2>
         </div>
+        <div class="bet_panel">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" required="">
+                <label for="name" class="form__label">Bet Amount</label>
+            </div>
+            <button class="betButton" onclick="setMinesCount(1)">1</button>
+            <button class="betButton" onclick="setMinesCount(4)">4</button>
+            <button class="betButton" onclick="setMinesCount(10)">10</button>
+            <button id="betttn">Bet</button>
+        </div>
+        <div class="stats">
+            stats
+        </div>
         <div id="board">
         </div>
-        <div class="button" onclick="location.reload()">
+        <!-- <div id="zeron" class="button" onclick="location.reload()">
             <div class="box">R</div>
             <div class="box">E</div>
             <div class="box">S</div>
             <div class="box">E</div>
             <div class="box">T</div>
-        </div>
+        </div> -->
     <script src="js/main.js"></script>
 
 </body>
